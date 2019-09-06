@@ -1,0 +1,1281 @@
+
+
+/*.tt{
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+
+}
+*/
+
+#my-svg{
+  text-align: center;
+}
+
+
+ h1 span {
+  
+    display: inline-block;
+    animation: animate 1s linear forwards; 
+    opacity: 0;          
+}
+
+
+
+
+h1{
+  margin:0;
+  padding: 0;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50);
+  width: 100%;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  /*color: #ffc4ab;*/
+  color: #a6adad;
+  font-weight: bold;
+  /*text-transform: lowercase;*/
+  font-size: 90px;
+  letter-spacing: -3px;
+
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(10px);
+  }
+
+  100%{
+   opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0px);
+  }
+}
+
+h1 span:nth-child(1){
+
+  animation: delay:1s;
+}
+
+h1 span:nth-child(2){
+
+  animation: delay:2s;
+}
+
+h1 span:nth-child(3){
+
+  animation: delay:2.5s;
+}
+
+h1 span:nth-child(4){
+
+  animation: delay:3s;
+}
+
+h1 span:nth-child(5){
+
+  animation: delay:3.5s;
+}
+
+h1 span:nth-child(6){
+
+  animation: delay:3.75s;
+}
+
+h1 span:nth-child(7){
+
+  animation: delay:4s;
+}
+
+h1 span:nth-child(8){
+
+  animation: delay:4.5s;
+}
+
+h1 span:nth-child(9){
+
+  animation: delay:4.75s;
+}
+
+h1 span:nth-child(10){
+
+  animation: delay:5s;
+}
+
+h1 span:nth-child(11){
+
+  animation: delay:5.5s;
+}
+
+
+
+
+/*
+
+.tt span:nth-child(2) { animation-delay: .1s; }
+.tt span:nth-child(3) { animation-delay: .2s; }
+.tt span:nth-child(4) { animation-delay: .3s; }
+.tt span:nth-child(5) { animation-delay: .4s; }
+.tt span:nth-child(6) { animation-delay: .5s; }
+.tt span:nth-child(7) { animation-delay: .6s; }
+.tt span:nth-child(8) { animation-delay: .7s; }
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 #CCC,
+                 0 7px 0 #CCC,
+                 0 8px 0 #CCC,
+                 0 9px 0 #CCC,
+                 0 50px 25px rgba(0, 0, 0, .2);
+  }
+}
+*/
+
+
+
+/*v7*/
+
+.bg_heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+ }
+
+.heart_7 {
+    position: absolute;
+    top: -50%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -m-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.heart_7:before {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 100%;
+}
+
+.heart_7:after {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 100%;
+}
+
+
+
+@keyframes love_7 {
+  0% {
+    top: 110%;
+  }
+}
+@-webkit-keyframes love_7 {
+  0% {
+    top: 110%;
+  }
+}
+
+
+
+/*v8*/
+
+.bubbles {
+   position: absolute;
+    top: 0;
+    left: 0;
+    height: 95%;
+    width: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+   z-index: 200;
+   border-radius: 50%;
+}
+.bubble:nth-child(1) {
+    top: 70%;
+    left: 79%;
+    height: 2vmin;
+    width: 2vmin;
+    -webkit-animation: love-burst 3s infinite 0s;
+          animation: love-burst 3s infinite 0s;
+   box-shadow: inset 0 0 0 1vmin #fff;
+   -webkit-transform: translate(0, 0.45em) scale(0);
+          transform: translate(0, 0.45em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(2) {
+  top: 45%;
+  left: 77%;
+    height: 6vmin;
+    width: 6vmin;
+    -webkit-animation: love-burst 3s infinite 0.15s;
+          animation: love-burst 3s infinite 0.15s;
+    box-shadow: inset 0 0 0 3vmin #fff;
+    -webkit-transform: translate(0, 0.85em) scale(0);
+          transform: translate(0, 0.85em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(3) {
+    top: 49%;
+    left: 58%;
+    height: 12vmin;
+    width: 12vmin;
+    -webkit-animation: love-burst 3s infinite 0.3s;
+          animation: love-burst 3s infinite 0.3s;
+    box-shadow: inset 0 0 0 6vmin #fff;
+    -webkit-transform: translate(0, 1.2em) scale(0);
+          transform: translate(0, 1.2em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(4) {
+    top: 67%;
+    left: 24%;
+    height: 8vmin;
+    width: 8vmin;
+    -webkit-animation: love-burst 3s infinite 0.45s;
+          animation: love-burst 3s infinite 0.45s;
+    box-shadow: inset 0 0 0 4vmin #fff;
+  -webkit-transform: translate(0, 0.75em) scale(0);
+          transform: translate(0, 0.75em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(5) {
+    top: 31%;
+    left: 39%;
+    height: 18vmin;
+    width: 18vmin;
+    -webkit-animation: love-burst 3s infinite 0.6s;
+          animation: love-burst 3s infinite 0.6s;
+    box-shadow: inset 0 0 0 9vmin #fff;
+    -webkit-transform: translate(0, 0.2em) scale(0);
+          transform: translate(0, 0.2em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(6) {
+    top: 88%;
+    left: 90%;
+    height: 4vmin;
+    width: 4vmin;
+    -webkit-animation: love-burst 3s infinite 0.75s;
+          animation: love-burst 3s infinite 0.75s;
+    box-shadow: inset 0 0 0 2vmin #fff;
+    -webkit-transform: translate(0, 0.3em) scale(0);
+          transform: translate(0, 0.3em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(7) {
+    top: 88%;
+    left: 47%;
+    height: 20vmin;
+    width: 20vmin;
+    -webkit-animation: love-burst 3s infinite 0.9s;
+          animation: love-burst 3s infinite 0.9s;
+    box-shadow: inset 0 0 0 10vmin #fff;
+    -webkit-transform: translate(0, 0.6em) scale(0);
+          transform: translate(0, 0.6em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(8) {
+    top: 84%;
+    left: 19%;
+    height: 6vmin;
+    width: 6vmin;
+    -webkit-animation: love-burst 3s infinite 1.05s;
+          animation: love-burst 3s infinite 1.05s;
+    box-shadow: inset 0 0 0 3vmin #fff;
+    -webkit-transform: translate(0, 0.9em) scale(0);
+          transform: translate(0, 0.9em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(9) {
+    top: 23%;
+    left: 76%;
+    height: 9vmin;
+    width: 9vmin;
+    -webkit-animation: love-burst 3s infinite 1.2s;
+          animation: love-burst 3s infinite 1.2s;
+    box-shadow: inset 0 0 0 4.5vmin #fff;
+    -webkit-transform: translate(0, 1.2em) scale(0);
+          transform: translate(0, 1.2em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(10) {
+    top: 58%;
+    left: 14%;
+    height: 10vmin;
+    width: 10vmin;
+    -webkit-animation: love-burst 3s infinite 1.35s;
+          animation: love-burst 3s infinite 1.35s;
+    box-shadow: inset 0 0 0 5vmin #fff;
+    -webkit-transform: translate(0, 0.75em) scale(0);
+          transform: translate(0, 0.75em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(11) {
+    top: 29%;
+    left: 84%;
+    height: 1vmin;
+    width: 1vmin;
+    -webkit-animation: love-burst 3s infinite 1.5s;
+          animation: love-burst 3s infinite 1.5s;
+    box-shadow: inset 0 0 0 0.5vmin #fff;
+    -webkit-transform: translate(0, 1.1em) scale(0);
+          transform: translate(0, 1.1em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(12) {
+    top: 5%;
+    left: 89%;
+    height: 3vmin;
+    width: 3vmin;
+    -webkit-animation: love-burst 3s infinite 1.65s;
+          animation: love-burst 3s infinite 1.65s;
+    box-shadow: inset 0 0 0 1.5vmin #fff;
+    -webkit-transform: translate(0, 0.8em) scale(0);
+          transform: translate(0, 0.8em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(13) {
+    top: 77%;
+    left: 96%;
+    height: 11vmin;
+    width: 11vmin;
+    -webkit-animation: love-burst 3s infinite 1.8s;
+          animation: love-burst 3s infinite 1.8s;
+    box-shadow: inset 0 0 0 5.5vmin #fff;
+    -webkit-transform: translate(0, 0.15em) scale(0);
+          transform: translate(0, 0.15em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(14) {
+    top: 94%;
+    left: 52%;
+    height: 2vmin;
+    width: 2vmin;
+    -webkit-animation: love-burst 3s infinite 1.95s;
+          animation: love-burst 3s infinite 1.95s;
+    box-shadow: inset 0 0 0 1vmin #fff;
+    -webkit-transform: translate(0, 1.2em) scale(0);
+          transform: translate(0, 1.2em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(15) {
+    top: 66%;
+    left: 10%;
+    height: 15vmin;
+  width: 15vmin;
+    -webkit-animation: love-burst 3s infinite 2.1s;
+          animation: love-burst 3s infinite 2.1s;
+    box-shadow: inset 0 0 0 7.5vmin #fff;
+    -webkit-transform: translate(0, 0.45em) scale(0);
+          transform: translate(0, 0.45em) scale(0);
+    -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(16) {
+  top: 28%;
+  left: 29%;
+  height: 5vmin;
+  width: 5vmin;
+  -webkit-animation: love-burst 3s infinite 2.25s;
+          animation: love-burst 3s infinite 2.25s;
+  box-shadow: inset 0 0 0 2.5vmin #fff;
+  -webkit-transform: translate(0, 1.2em) scale(0);
+          transform: translate(0, 1.2em) scale(0);
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(17) {
+  top: 18%;
+  left: 99%;
+  height: 2vmin;
+  width: 2vmin;
+  -webkit-animation: love-burst 3s infinite 2.4s;
+          animation: love-burst 3s infinite 2.4s;
+  box-shadow: inset 0 0 0 1vmin #fff;
+  -webkit-transform: translate(0, 0.8em) scale(0);
+          transform: translate(0, 0.8em) scale(0);
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(18) {
+  top: 22%;
+  left: 70%;
+  height: 13vmin;
+  width: 13vmin;
+  -webkit-animation: love-burst 3s infinite 2.55s;
+          animation: love-burst 3s infinite 2.55s;
+  box-shadow: inset 0 0 0 6.5vmin #fff;
+  -webkit-transform: translate(0, 0.1em) scale(0);
+          transform: translate(0, 0.1em) scale(0);
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(19) {
+  top: 92%;
+  left: 80%;
+  height: 12vmin;
+  width: 12vmin;
+  -webkit-animation: love-burst 3s infinite 2.7s;
+          animation: love-burst 3s infinite 2.7s;
+  box-shadow: inset 0 0 0 6vmin #fff;
+  -webkit-transform: translate(0, 0.1em) scale(0);
+          transform: translate(0, 0.1em) scale(0);
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.bubble:nth-child(20) {
+  top: 58%;
+  left: 40%;
+  height: 2vmin;
+  width: 2vmin;
+  -webkit-animation: love-burst 3s infinite 2.85s;
+          animation: love-burst 3s infinite 2.85s;
+  box-shadow: inset 0 0 0 1vmin #fff;
+  -webkit-transform: translate(0, 0.7em) scale(0);
+          transform: translate(0, 0.7em) scale(0);
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+@-webkit-keyframes love-burst {
+  50%,
+    100% {
+    box-shadow: inset 0 0 0 0 red;
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes love-burst {
+  50%,
+    100% {
+    box-shadow: inset 0 0 0 0 #f846a2;
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+  }
+}
+.heart {
+  fill: #fff;
+  opacity: 0;
+}
+.bubble:nth-child(1) .heart {
+  -webkit-animation: love 3s forwards infinite 0s;
+          animation: love 3s forwards infinite 0s;
+  -webkit-transform: scale(0.5) rotate(-15deg);
+          transform: scale(0.5) rotate(-15deg);
+}
+.bubble:nth-child(2) .heart {
+  -webkit-animation: love 3s forwards infinite 0.15s;
+          animation: love 3s forwards infinite 0.15s;
+  -webkit-transform: scale(0.5) rotate(42deg);
+          transform: scale(0.5) rotate(42deg);
+}
+.bubble:nth-child(3) .heart {
+  -webkit-animation: love 3s forwards infinite 0.3s;
+          animation: love 3s forwards infinite 0.3s;
+  -webkit-transform: scale(0.5) rotate(-27deg);
+          transform: scale(0.5) rotate(-27deg);
+}
+.bubble:nth-child(4) .heart {
+  -webkit-animation: love 3s forwards infinite 0.45s;
+          animation: love 3s forwards infinite 0.45s;
+  -webkit-transform: scale(0.5) rotate(39deg);
+          transform: scale(0.5) rotate(39deg);
+}
+.bubble:nth-child(5) .heart {
+  -webkit-animation: love 3s forwards infinite 0.6s;
+          animation: love 3s forwards infinite 0.6s;
+  -webkit-transform: scale(0.5) rotate(-32deg);
+          transform: scale(0.5) rotate(-32deg);
+}
+.bubble:nth-child(6) .heart {
+  -webkit-animation: love 3s forwards infinite 0.75s;
+          animation: love 3s forwards infinite 0.75s;
+  -webkit-transform: scale(0.5) rotate(12deg);
+          transform: scale(0.5) rotate(12deg);
+}
+.bubble:nth-child(7) .heart {
+  -webkit-animation: love 3s forwards infinite 0.9s;
+          animation: love 3s forwards infinite 0.9s;
+  -webkit-transform: scale(0.5) rotate(-22deg);
+          transform: scale(0.5) rotate(-22deg);
+}
+.bubble:nth-child(8) .heart {
+  -webkit-animation: love 3s forwards infinite 1.05s;
+          animation: love 3s forwards infinite 1.05s;
+  -webkit-transform: scale(0.5) rotate(16deg);
+          transform: scale(0.5) rotate(16deg);
+}
+.bubble:nth-child(9) .heart {
+  -webkit-animation: love 3s forwards infinite 1.2s;
+          animation: love 3s forwards infinite 1.2s;
+  -webkit-transform: scale(0.5) rotate(-2deg);
+          transform: scale(0.5) rotate(-2deg);
+}
+.bubble:nth-child(10) .heart {
+  -webkit-animation: love 3s forwards infinite 1.35s;
+          animation: love 3s forwards infinite 1.35s;
+  -webkit-transform: scale(0.5) rotate(49deg);
+          transform: scale(0.5) rotate(49deg);
+}
+.bubble:nth-child(11) .heart {
+  -webkit-animation: love 3s forwards infinite 1.5s;
+          animation: love 3s forwards infinite 1.5s;
+  -webkit-transform: scale(0.5) rotate(-3deg);
+          transform: scale(0.5) rotate(-3deg);
+}
+.bubble:nth-child(12) .heart {
+  -webkit-animation: love 3s forwards infinite 1.65s;
+          animation: love 3s forwards infinite 1.65s;
+  -webkit-transform: scale(0.5) rotate(26deg);
+          transform: scale(0.5) rotate(26deg);
+}
+.bubble:nth-child(13) .heart {
+  -webkit-animation: love 3s forwards infinite 1.8s;
+          animation: love 3s forwards infinite 1.8s;
+  -webkit-transform: scale(0.5) rotate(-24deg);
+          transform: scale(0.5) rotate(-24deg);
+}
+.bubble:nth-child(14) .heart {
+  -webkit-animation: love 3s forwards infinite 1.95s;
+          animation: love 3s forwards infinite 1.95s;
+  -webkit-transform: scale(0.5) rotate(26deg);
+          transform: scale(0.5) rotate(26deg);
+}
+.bubble:nth-child(15) .heart {
+  -webkit-animation: love 3s forwards infinite 2.1s;
+          animation: love 3s forwards infinite 2.1s;
+  -webkit-transform: scale(0.5) rotate(-11deg);
+          transform: scale(0.5) rotate(-11deg);
+}
+.bubble:nth-child(16) .heart {
+  -webkit-animation: love 3s forwards infinite 2.25s;
+          animation: love 3s forwards infinite 2.25s;
+  -webkit-transform: scale(0.5) rotate(7deg);
+          transform: scale(0.5) rotate(7deg);
+}
+.bubble:nth-child(17) .heart {
+  -webkit-animation: love 3s forwards infinite 2.4s;
+          animation: love 3s forwards infinite 2.4s;
+  -webkit-transform: scale(0.5) rotate(-34deg);
+          transform: scale(0.5) rotate(-34deg);
+}
+.bubble:nth-child(18) .heart {
+  -webkit-animation: love 3s forwards infinite 2.55s;
+          animation: love 3s forwards infinite 2.55s;
+  -webkit-transform: scale(0.5) rotate(6deg);
+          transform: scale(0.5) rotate(6deg);
+}
+.bubble:nth-child(19) .heart {
+  -webkit-animation: love 3s forwards infinite 2.7s;
+          animation: love 3s forwards infinite 2.7s;
+  -webkit-transform: scale(0.5) rotate(-7deg);
+          transform: scale(0.5) rotate(-7deg);
+}
+.bubble:nth-child(20) .heart {
+  -webkit-animation: love 3s forwards infinite 2.85s;
+          animation: love 3s forwards infinite 2.85s;
+  -webkit-transform: scale(0.5) rotate(39deg);
+          transform: scale(0.5) rotate(39deg);
+}
+
+@-webkit-keyframes love {
+  50% {
+    fill: red;
+    opacity: 1;
+  }
+}
+
+@keyframes love {
+  50% {
+    fill: red;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+ /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@----WEBKIT SCROLLBAR THUMB---@@@@@@@@@@@@@@@@@@@@*/
+}
+}
+<pre>::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #86b9e3;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #ffff;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #ff5c8e;
+  /*background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));*/
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@----WEBKIT SCROLLBAR THUMB---@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+/*#music{
+  display: none;
+}*/
+/*
+.the-heart-welcome-content {
+    color: #fff;
+}
+
+.the-heart-welcome-content {
+    position: absolute;
+    z-index: 10;
+    margin-bottom: 25px;
+    top: 0;
+}*/
+
+
+.bride-item.layout-1.left {
+    margin-right: 300px;
+    text-align: right;
+    position: relative;
+}
+
+.bride-item.layout-1.left .line {
+    height: 320px;
+    width: 1px;
+    /*background-color: rgba(255, 255, 255, 0.3);*/
+    position: absolute;
+    right: -315px;
+    top: -40px;
+}
+
+
+
+.bride-item.layout-1.left .line .fa {
+    display: block;
+    color: #fff;
+    background-color: #ff5c8e;
+    padding: 8px;
+    width: 40px;
+    margin-top: 135px;
+    margin-left: -18px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-right: 6px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.box-shadow {
+    -webkit-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.bride-item.layout-1.left .img_in {
+    width: 250px;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    margin-right: -260px;
+    float: right;
+}
+
+.bride-item.layout-1.left .img_in img {
+    border-radius: 50%;
+}
+img {
+    max-width: 100%;
+}
+
+.bride-item.layout-1.left .content {
+    padding: 55px 0px;
+}
+
+.bride-item.layout-1.left h2.name {
+    font-family: "Merienda", cursive;
+    font-size: 46px;
+    color: #ff5c8e;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+.bride-item.layout-1.left .discription {
+    font-size: 18px;
+    color: #333031;
+    margin-bottom: 15px;
+    /* font-weight: 500; */
+    text-align: right;
+}
+}
+
+.bride-item.layout-1.left ul.social-media {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bride-item.layout-1.left ul.social-media li {
+    display: inline-block;
+}
+
+.bride-item.layout-1.left ul.social-media li a {
+    display: block;
+    color: #fff;
+    padding: 3px;
+    width: 35px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 6px;
+}
+
+
+
+
+
+.bride-item.layout-1.right {
+    margin-left: 300px;
+}
+
+.bride-item.layout-1.right .img_in {
+    width: 250px;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    margin-left: -260px;
+    float: left;
+}
+.bride-item.layout-1.right .img_in img {
+    border-radius: 50%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bride-item.layout-1.right .content {
+    padding: 55px 0px;
+}
+
+.bride-item.layout-1.right h2.name {
+    font-family: "Merienda", cursive;
+    font-size: 46px;
+    color: #ff5c8e;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+.bride-item.layout-1.right .discription {
+    font-size: 18px;
+    color: #090909;
+    margin-bottom: 15px;
+    /*font-weight: 500;*/
+}
+
+.bride-item.layout-1.right ul.social-media {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bride-item.layout-1.right ul.social-media li {
+    display: inline-block;
+}
+
+.bride-item.layout-1.right ul.social-media li a {
+    display: block;
+    color: #fff;
+    padding: 3px;
+    width: 35px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 6px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 991px){
+.bride-item.layout-1.right .img_in img, .bride-item.layout-1.left .img_in img {
+    border-radius: 50%;
+}
+}
+
+@media only screen and (max-width: 991px){
+.bride-item.layout-1.right, .bride-item.layout-1.left {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+}
+
+
+@media only screen and (max-width: 991px){
+.bride-item.layout-1.right .img_in, .bride-item.layout-1.left .img_in {
+    width: 275px;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
+}}
+
+
+@media only screen and (max-width: 991px){
+.bride-item.layout-1.left .line {
+    height: 320px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    right: -315px;
+    top: -40px;
+    display: none;
+}
+}
+
+
+
+
+@media only screen and (max-width: 1600px) and (min-width: 600px){
+
+.mob{
+  display: none;
+}
+
+.desk{
+  display: block;
+}
+
+}
+
+
+
+@media only screen and (max-width: 991px) and (min-width: 600px){
+
+
+.bride-item.layout-1.left .discription {
+    font-size: 18px;
+    color: #333031;
+    margin-bottom: 15px;
+    /* font-weight: 500; */
+    text-align: center;
+}
+
+
+
+h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50);
+    width: 100%;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    /* color: #ffc4ab; */
+    color: #a6adad;
+    font-weight: bold;
+    /* text-transform: lowercase; */
+    font-size: 60px;
+    letter-spacing: -3px;
+}
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px){
+
+
+
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 59%!important;
+    width: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+
+
+
+
+.married {
+    position: absolute;
+    top: 134%!important;
+    text-align: center;
+    width: 100%;
+    color: #000!important;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+
+.dates {
+    position: absolute;
+    top: 150%!important;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #000!important;
+    font-family: 'Dancing Script', cursive;
+}
+.c-hero-banner--main{
+    height: 60%;
+}
+
+
+.bg_heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 59%!important;
+    overflow: hidden;
+    z-index: 2;
+ }
+
+
+
+.ml3 {
+  font-weight: 900;
+  font-size: 33px!important;
+  text-align: center;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 90px;
+  font-family: 'Satisfy', cursive;
+  text-transform: full-size-kana; 
+
+}
+
+
+.mob{
+  display: block;
+}
+
+.desk{
+  display: none;
+        }
+
+
+ .names {
+
+    color: #161515!important;
+    letter-spacing: 0px;
+    top: 109%;
+    text-transform: capitalize;
+
+}       
+
+h1 {
+
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    color: #ffc4ab;
+    color: #a6adad;
+    font-weight: bold;
+    text-transform: lowercase;
+    font-size: 50px;
+    letter-spacing: -7px;
+
+}
+
+.bride-item.layout-1.left .content {
+    padding: 9px 0px;
+}
+
+
+.bride-item.layout-1.right .content {
+    padding: 9px 0px;
+}
+
+.bride-item.layout-1.left .discription {
+
+    font-size: 18px;
+    color: #333031;
+    margin-bottom: 15px;
+    /*font-weight: 500;*/
+    text-align: right;
+    text-align: center;
+
+}
+
+
+
+
+.title {
+
+   
+    letter-spacing: 8px;
+    display: none;
+
+}
+
+.loader-img {
+
+    height: 50%;
+    margin-top: 113px;
+
+}
+
+
+
+
+}
+
+
+
+.date{
+  text-align: center;
+  font-size: 30px;
+  /*font-family: 'Pacifico', cursive;*/
+  color: #f72c09;
+  font-family: "laug";
+}
+
+
+
+
+
+.adress{
+  margin-top: 50px;
+}
+
+
+#accordion .panel{
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    margin-bottom: 10px;
+    background: transparent;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    position: relative;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 20px 30px;
+    margin: 0;
+    background: rgba(0,0,0,0.4);
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    /*z-index: 9999;*/
+}
+#accordion .panel-title a.collapsed{ border: none; }
+
+#accordion .panel-title a.collapsed:before{
+    color: rgba(255,255,255,0.5);
+    transform: rotate(0deg);
+}
+#accordion .panel-body{
+    padding: 20px 30px;
+    background: rgba(0,0,0,0.1);
+    font-size: 15px;
+    color: #fff;
+    line-height: 28px;
+    letter-spacing: 1px;
+    border-top: none;
+    border-radius: 5px;
+}
+
+
+#snow {
+    background: none;
+    background-image: url(../img/snow1.png), url(../img/snow2.png), url(../img/sno3.png);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+} 
+
+
+
+
+
+.names{
+color: #fff;
+}
+
+
+.married{
+
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    color: #fff; 
+    font-family: 'Dancing Script', cursive; 
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+
+
+.dates{
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #fff;
+  font-family: 'Dancing Script', cursive; 
+
+
+}
+
+
+.footer {
+    padding-top: 0px;
+    
+    background-color: #000;
+    color: #FFFFFF;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-size: 14px;
+    font-style: italic;
+    text-transform: capitalize;
+    margin-top: 80px;
+}
+
+
+
+
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+  text-align: center;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 90px;
+  font-family: 'Dancing Script', cursive;
+  text-transform: full-size-kana; 
+
+
+
+
+}
+
+.ml3 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+
+.footer:before {
+    content: "";
+    display: block;
+    height: 100px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: -79px;
+    background: url(../img/bottom.png) center center repeat-x;
+    z-index: 4;
+}
+
+
